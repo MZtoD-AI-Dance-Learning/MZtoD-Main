@@ -1,0 +1,233 @@
+[33mcommit a4b4fe64f4aa4062b73bba8c69f38bc282d15dd0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JK <dbsworjs@naver.com>
+Date:   Sun Jun 12 15:37:52 2022 +0900
+
+    classpage->classpage_0,_1로 수정, classpage수정사항:  1. left to right 전개 2. 비디오 요소 분리, 간편화 3. class instruction
+
+[33mcommit 6a4f61e417ed78ecc89ce85762d7a521e2ab5844[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sun Jun 5 00:00:10 2022 +0900
+
+    path str로 변경
+
+[33mcommit d18f3af9c8e6a74f2cd55c2b456717bc7e2e7a47[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat Jun 4 23:17:38 2022 +0900
+
+    ffmpeg ec2 문제 해결3
+
+[33mcommit 12f74d1ee9469d21a7ad8463ad942e8c0f10cb5f[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat Jun 4 23:06:49 2022 +0900
+
+    ffmpeg ec2 문제 해결22
+
+[33mcommit 25361c7b957d92a05ce0f98a4fc7ea558e9f27ab[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat Jun 4 23:00:30 2022 +0900
+
+    ffmpeg ec2 문제 해결
+
+[33mcommit 9b3257a79f908515a6717dc344f84aeb55d4f9ee[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat Jun 4 20:30:40 2022 +0900
+
+    디렉토리 정리
+
+[33mcommit d9984ec6e1a3a5a076fc5866402f09a336ecf5be[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat Jun 4 18:26:19 2022 +0900
+
+    디렉토리 정리
+
+[33mcommit 3b5752c2ff37f37d0c6ec0dc67b17a0fcd6223a7[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Mon May 30 20:48:56 2022 +0900
+
+    webcam to ffmpeg 파일 변환
+
+[33mcommit 34f13025cfab6d02ab882f39e9534c930a8a1b37[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Mon May 30 00:17:46 2022 +0900
+
+    춤 영상 링크 MongoDB에 저장
+
+[33mcommit fcf289c90e9d91b47329ff76be7a4378578271d0[m
+Author: JK <dbsworjs@naver.com>
+Date:   Sun May 29 16:56:49 2022 +0900
+
+    add Scoring video, scoring button, add record pausebtn
+
+[33mcommit 32639e41c6a99935787c3b7d8c8de9010642c4be[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sun May 29 13:59:22 2022 +0900
+
+    2022 05 29
+
+[33mcommit 934419883cf5f7f261d7a1933f4ef04ff5703d3e[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Thu May 19 17:15:09 2022 +0900
+
+    2022/05/19 노종현 오늘의 진짜 최종
+
+[33mcommit c23743beb5f09606c48aa880f129da362f50050c[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Thu May 19 17:10:15 2022 +0900
+
+    2022/05/19 노종현
+
+[33mcommit 84c7fdc5d605a9f824df775f95f26c4ebbac4329[m
+Merge: 9946c48 ff9ee53
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Thu May 19 17:07:52 2022 +0900
+
+    new
+
+[33mcommit 9946c480ba0bbeceb02ad40b2a58c66f55a75c7f[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Thu May 19 17:01:59 2022 +0900
+
+    20220519 노종현
+
+[33mcommit ff9ee53dd5d6571d56668250dddcc58c023dc0b5[m
+Author: JK <dbsworjs@naver.com>
+Date:   Thu May 19 16:55:36 2022 +0900
+
+    20220519
+
+[33mcommit d40f7e99d32a379915541aa43828d4b315cf921f[m
+Author: JK <dbsworjs@naver.com>
+Date:   Thu May 19 16:40:19 2022 +0900
+
+    20220519
+
+[33mcommit e4d9131b1c15ead09be9f13ffc08b95b338e0f21[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Thu May 19 13:54:50 2022 +0900
+
+    05/19 수정사항
+
+[33mcommit e5ee03f0d9419a0828be8e3de46f5e712597021b[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue May 17 15:17:17 2022 +0900
+
+    cors 추가
+
+[33mcommit b2f30e6ca0105925635b1f159e6b450d51ca1f49[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Mon May 16 17:31:11 2022 +0900
+
+    host 바꿈
+
+[33mcommit d89abcb81c65acd43f2ca70e086470a74f37a401[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Mon May 16 15:37:30 2022 +0900
+
+    5번째
+
+[33mcommit 2d1d2c87977dda2a9dec957d3c090e980b0fb319[m
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Mon May 16 15:24:19 2022 +0900
+
+    Update server.py
+
+[33mcommit 2a7db6439c7fe25c18d7cb67359beae9a4d00ee2[m
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Mon May 16 14:29:23 2022 +0900
+
+    Update server.py
+
+[33mcommit b5b225161d8d3750550d0b6336ca805df5533f1b[m
+Merge: 013c8d9 3d4b78b
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sun May 15 22:49:43 2022 +0900
+
+    커밋
+
+[33mcommit 3d4b78bb7a8f020cb75838b265df5eaae53b61a4[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sun May 15 22:18:16 2022 +0900
+
+    세번째 업로드
+
+[33mcommit b532461218891bca34d62c45b315b3fd3c11388f[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Sat May 14 15:34:06 2022 +0900
+
+    second
+
+[33mcommit 013c8d9a2c88399e4fc0e55f608eca8b459e7239[m
+Merge: 441a3c5 676b728
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Wed Mar 16 10:11:38 2022 +0900
+
+    Merge pull request #3 from MZtoD-AI-Dance-Learning/last
+    
+    불필요한 API KEY 삭제
+
+[33mcommit 676b72844b023b6fc22db26f503d2c68fd869cad[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Wed Mar 16 10:10:35 2022 +0900
+
+    불필요한 API KEY 삭제
+
+[33mcommit 441a3c59561f127677740a8efa076a6998e6fe01[m
+Merge: 4c7303d c7119e6
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Tue Mar 15 23:55:50 2022 +0900
+
+    Merge pull request #2 from MZtoD-AI-Dance-Learning/last
+    
+    fixed untracked files
+
+[33mcommit c7119e6a198f7a51fdf4d277bada45893651b56e[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 23:54:40 2022 +0900
+
+    fixed untracked files
+
+[33mcommit 4c7303d80d30a6a7abfb7a66137dd31bc4024f94[m
+Merge: d96331b 12cc057
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Tue Mar 15 23:51:20 2022 +0900
+
+    Merge pull request #1 from MZtoD-AI-Dance-Learning/newthing
+    
+    3번째 테스트
+
+[33mcommit 12cc057529f59335e840afd5290761401cc79acf[m
+Merge: c4290ee d96331b
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 23:40:51 2022 +0900
+
+    newthing 2번째
+
+[33mcommit c4290ee0ea21dd7eaf7ebc11d21fc5412d166783[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 23:34:23 2022 +0900
+
+    3번째 테스트
+
+[33mcommit d96331b14eac9da0d973a4d2c00451f0997348d9[m
+Author: JongHyunNho <61325655+JongHyunNho@users.noreply.github.com>
+Date:   Tue Mar 15 23:30:34 2022 +0900
+
+    Delete secrets.json
+
+[33mcommit 2b895f70ba0b2f5367123400645c9f5ab4dde811[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 22:24:12 2022 +0900
+
+    .gitignore에 mongodb url 숨김
+
+[33mcommit db88f4e0c41b55d5199f04b2ba87b95331e281a4[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 22:15:34 2022 +0900
+
+    second commit
+
+[33mcommit 35372e63205d193faa81c2eca8d31c55d91c451b[m
+Author: NhoJONGHYUN <shgus79@ajou.ac.kr>
+Date:   Tue Mar 15 21:58:18 2022 +0900
+
+    첫 commit

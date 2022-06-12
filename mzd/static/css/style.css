@@ -1,0 +1,92 @@
+
+@font-face { 
+    font-family: 'NanumGothic';
+    src: url('/fonts/NanumGothic.eot');
+    src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
+    url('/fonts/NanumGothic.woff') format('woff');}
+
+
+@font-face { 
+    font-family: 'NanumGothic';
+    src: url('/fonts/NanumGothic.eot');
+    src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
+    url('/fonts/NanumGothic.woff') format('woff');}
+
+    
+.form-line{
+    border: solid 2px;
+    font-size: 15px;
+    border: 1;
+    border-color: #ef7676;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+}
+.input-text{
+    width:210px; 
+    height:30px
+}
+
+.img{
+    position:relative;
+    top:20px;
+    width:50px; 
+    height:auto;
+
+}
+.title{
+    text-align: center;
+    position:relative;
+    top:20px;
+    width:50px; 
+    height:auto;
+
+}
+
+.input-button{
+    background-color: #ef7676; 
+    color:azure; 
+    border:0; 
+    width:80; 
+    height:28
+}
+
+.signup-box{
+    margin: auto;
+    padding: 20px;
+    border: 10px solid #ef7676;
+    background-color: #ffffff;
+    width: 500px;
+}
+
+.signin-box{
+    margin: auto;
+    left:50%;
+    right:50%;
+    padding: 20px;
+    border: 10px solid #ef7676;
+    background-color: #ffffff;
+    width: 300px;
+}
+
+.text-rainbow {
+    animation: rainbow 3s infinite;
+  
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+
+  @keyframes rainbow{
+    0%{color:#ff0053;}
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
