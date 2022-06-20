@@ -44,7 +44,7 @@ def upload(request: Request, files: UploadFile = File(...)):
    
    # ffmpeg로 변환한 파일을 s3에 업로드
    File_control.upload_dance(str(filename))
-   return RedirectResponse(url="/classPage0", status_code=302)
+   return RedirectResponse(url="/classPage0_2", status_code=302)
 
 
 
