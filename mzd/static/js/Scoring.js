@@ -3,8 +3,6 @@
 const fileUpload= document.querySelector("#fileupload-form");
 const fileUploadInput= document.querySelector("#fileupload-form input");
 
-
-
 //document가 아닌 바로 변수를 통해서 form을 찾을 수 있음. 
 function fileuploadSubmit(event){
   event.preventDefault();//submit 시 페이지 새로고침을 방지
@@ -14,12 +12,11 @@ function fileuploadSubmit(event){
 //submit 시 prevent default| 
 fileUpload.addEventListener("submit",fileuploadSubmit);
 
-
+//Scoring 비디오 element
 
 /*//////////////////////////////////////////////////////////////////////
 Scorlist 정의
 *///////////////////////////////////////////////////////////////////////
-
 
 let scoreList= []; //스코어링 점수 배열
 let scorelistMale0=[];
@@ -53,7 +50,7 @@ Scoring 함수 정의
 const scoreStart= document.querySelector("#scoreStart")
 const scoreEnd= document.querySelector("#scoreEnd")
 
-let scoreVideo= document.querySelector("#scorevideo0")
+const scoreVideo= document.querySelector("#scorevideo0")
 let source= document.createElement("source")
 
 const scoreLinkMale0= "https://mztod.s3.ap-northeast-2.amazonaws.com/AlphaPose_user2_LoveDive_0.mp4"
@@ -81,11 +78,9 @@ function defineScoreVideo(){
 };
 };
 
-
-
-
 let index=0;
 let score= null;
+
 function printScore(){
     defineScoreVideo();
     if(scoreList.length>index){
@@ -97,6 +92,7 @@ function printScore(){
 let timer= null;
 //scoreprint 함수를 timer 간격으로 실행
 scoreStart.addEventListener("click",function(){
+  scoreVideo.play();
   printScore();
   timer=setInterval(printScore,800);
 });
@@ -112,7 +108,6 @@ scoreEnd.addEventListener("click",function(){
 
 //스코어링 영상 재생
 //스코어링 영상 주소 변수 생성
-
 
 if(window.addEventListener){
   window.addEventListener('load', function(){
@@ -137,6 +132,4 @@ AWS.config.update({
 });
 
 AWS.config.region = 'ap-northeast-2';
-
-
 

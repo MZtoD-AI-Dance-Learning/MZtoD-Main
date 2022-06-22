@@ -13,11 +13,13 @@ let mediaStream = null;
 let mediaRecorder = null;
 let recordedMediaURL =null;
 
-
 // querySelector는 id를 찾는지, class를 찾는지 분명히 해줘야 함 ex) id는 앞에 #붙임. 
 
 const filenameForm= document.querySelector("#filename-form");
 const filenameInput= document.querySelector("#filename-form input");
+
+// 레이블 영상 비디오 element
+const player = document.getElementById('teachVideo');
 
 // 유저의 카메라로 부터 입력을 사용할 수 있도록 요청
 navigator.mediaDevices
@@ -35,24 +37,37 @@ navigator.mediaDevices
   
 // 5초 후 시작 하는 리스트 및 함수printThree()
 const threeList= ["5초 후 녹화를 시작합니다!",4,3,2,1,"Start!",""]
-let num=0;
-let second=null;
+let num1=0;
+let second1=null;
+let num2=0;
+let second2=null;
 
-function printThree(){
-  if(threeList.length>num){
-    second= threeList[num++];
-    document.querySelector("#threelist").innerText=second;
+function printThree1(){
+  if(threeList.length>num1){
+    second1= threeList[num1++];
+    document.querySelector("#threelist1").innerText=second1;
+}
+};
+
+function printThree2(){
+  if(threeList.length>num2){
+    second2= threeList[num2++];
+    document.querySelector("#threelist2").innerText=second2;
 }
 };
 
 
-let timeSec=null;
+let timeSec1=null;
+let timeSec2=null;
 let recordUrl=null;
 // 녹화 시작 버튼 클릭 시 빌생하는 이벤트 핸들러 등록
 startBtn.addEventListener('click', function () {
-  printThree();
-  timeSec= setInterval(printThree,1000);
 
+  printThree1();
+  printThree2();
+  timeSec1= setInterval(printThree1,1000);
+  timeSec2= setInterval(printThree2,1000);
+  setTimeout(()=> player.play(),6000);
   let recordedChunks = [];
   // 1.MediaStream을 매개변수로 MediaRecorder 생성자를 호출
   // 이거는 웹캠 화면을 호출
@@ -60,7 +75,6 @@ startBtn.addEventListener('click', function () {
   mediaRecorder = new MediaRecorder(mediaStream, {
     mimeType: 'video/webm ; codecs="opus" '});
   
-
   // 2. 전달받는 데이터를 처리하는 이벤트 핸들러 등록
   //여기서부터 사실상 
   mediaRecorder.ondataavailable = function (event) {
@@ -68,7 +82,7 @@ startBtn.addEventListener('click', function () {
       console.log('ondataavailable');
       recordedChunks.push(event.data);
     }
-  }
+  };
 
   // 3. 녹화 중지 이벤트 핸들러 등록
   pauseBtn.addEventListener('click', function () {
@@ -84,8 +98,8 @@ startBtn.addEventListener('click', function () {
 
   const blob = new Blob(recordedChunks, { type: 'video/mp4;' });
   recordedMediaURL = URL.createObjectURL(blob);
+  videoOutput.srcObject=null;
   videoOutput.src = recordedMediaURL;//  저장되는 bloburl을 videoOutput element src에 저장
-
   };
 
   setTimeout(function(){
@@ -93,6 +107,7 @@ startBtn.addEventListener('click', function () {
   },6000);
 
 });
+
 // 녹화 종료 버튼 클릭 시 빌생하는 이벤트 핸들러 등록
 finishBtn.addEventListener('click', function () {
   if (mediaRecorder) {
@@ -101,6 +116,7 @@ finishBtn.addEventListener('click', function () {
     alert("녹화 종료. 다시 녹화를 하려면 Reset 해주세요.")
     //녹화 save버튼 누르면 웹캠 비디오 화면 사라진다.
     videoOutput.load();
+    
   }
 });
 
@@ -121,9 +137,9 @@ downloadBtn.addEventListener('click', function () {
 function filenameSubmit(event){
   event.preventDefault(); //submit 시 페이지 새로고침을 방지
   console.dir(filenameInput.value);
-}
+};
 
-//submit 시 prevent default|
+//submit 시 prevent default
 filenameForm.addEventListener("submit",filenameSubmit);
 
 
@@ -133,11 +149,9 @@ video logic
 
 //출처: https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=292171
 
-
 if(window.addEventListener){
   window.addEventListener('load', function(){
       if(window.HTMLVideoElement){
-          var player = document.getElementById('teachVideo');
           player.addEventListener("ended", function(){
               alert("이제 자신의 동작을 채점하면서 학습해보세요")
               // 동영상 재생이 끝나면 실행될 코드\
@@ -145,9 +159,7 @@ if(window.addEventListener){
                     //레이블 영상0 재생
                       player.src = "https://mztod.s3.ap-northeast-2.amazonaws.com/practice_LoveDive_0.mp4";
   
-                    player.play();
                 }
-
           });
         }
     }, false);
